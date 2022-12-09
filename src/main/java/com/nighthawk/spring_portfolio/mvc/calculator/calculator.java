@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Stack;
 import java.lang.Math;
 
-public class calculator {
+public class Calculator {
     // Key instance variables
     private String expression;
     private ArrayList<String> tokens;
@@ -38,7 +38,7 @@ public class calculator {
     }
 
     // Create a 1 argument constructor expecting a mathematical expression
-    public calculator(String expression) {
+    public Calculator(String expression) {
         // original input
         this.expression = expression;
 
@@ -282,7 +282,7 @@ public class calculator {
 
     public static void main(String[] args) {
 
-        calculator myCalculator1 = new calculator("1 + 2 * 4");
+        Calculator myCalculator1 = new Calculator("1 + 2 * 4");
         System.out.println("First Calculator Example:");
         System.out.println("-------------------------");
         System.out.println("Original Expression: " + myCalculator1.expression);
@@ -291,7 +291,7 @@ public class calculator {
         System.out.println("Calculator Output: " + myCalculator1.result);
         System.out.println("");
 
-        calculator myCalculator2 = new calculator("(1 + 2) * (8 / 2)");
+        Calculator myCalculator2 = new Calculator("(1 + 2) * (8 / 2)");
         System.out.println("Second Calculator Example:");
         System.out.println("-------------------------");
         System.out.println("Original Expression: " + myCalculator2.expression);
@@ -300,7 +300,7 @@ public class calculator {
         System.out.println("Calculator Output: " + myCalculator2.result);
         System.out.println("");
 
-        calculator myCalculator3 = new calculator("3 ^ 4 + (8 % 3)");
+        Calculator myCalculator3 = new Calculator("3 ^ 4 + (8 % 3)");
         System.out.println("Third Calculator Example:");
         System.out.println("-------------------------");
         System.out.println("Original Expression: " + myCalculator3.expression);
@@ -309,7 +309,7 @@ public class calculator {
         System.out.println("Calculator Output: " + myCalculator3.result);
         System.out.println("");
 
-        calculator myCalculator4 = new calculator("(3 root 8 ^ 2");
+        Calculator myCalculator4 = new Calculator("(3 root 8 ^ 2");
         System.out.println("Fourth Calculator Example:");
         System.out.println("-------------------------");
         System.out.println("Original Expression: " + myCalculator4.expression);
@@ -318,7 +318,7 @@ public class calculator {
         System.out.println("Calculator Output: " + myCalculator4.result);
         System.out.println("");
 
-        calculator myCalculator5 = new calculator("8 ncr 3");
+        Calculator myCalculator5 = new Calculator("8 ncr 3");
         System.out.println("Fifth Calculator Example:");
         System.out.println("-------------------------");
         System.out.println("Original Expression: " + myCalculator5.expression);

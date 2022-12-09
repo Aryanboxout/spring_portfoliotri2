@@ -14,7 +14,7 @@ public class CalculatorApiController {
     @GetMapping("/calculate")
     public ResponseEntity<String> calculate(@RequestBody final String expression) {
         try {
-            calculator calculatedExpression = new calculator(expression);
+            Calculator calculatedExpression = new Calculator(expression);
             return new ResponseEntity<>(calculatedExpression.toString(), HttpStatus.ACCEPTED);
         } catch (RuntimeException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
